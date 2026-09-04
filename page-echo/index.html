@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Page Echo Privacy Policy</title>
+  <style>
+    :root {
+      --ink: #181713;
+      --cream: #efe7d5;
+      --paper: #f8f2e3;
+      --orange: #d65a2b;
+      --blue: #2d5e9e;
+      --green: #4f7558;
+      --line: #bcb29d;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--cream); color: var(--ink); }
+    body { margin: 0; min-height: 100vh; background-image: linear-gradient(rgba(53,46,34,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(53,46,34,.05) 1px, transparent 1px); background-size: 22px 22px; }
+    a { color: var(--blue); }
+    .frame { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 26px 0 64px; }
+    .top { border: 2px solid var(--ink); background: var(--paper); box-shadow: 10px 10px 0 var(--ink); }
+    .topline { display: grid; grid-template-columns: 1fr auto; align-items: center; min-height: 72px; padding: 0 24px; border-bottom: 2px solid var(--ink); }
+    .logo { display: flex; align-items: flex-end; gap: 4px; height: 28px; }
+    .logo i { display: block; width: 5px; background: var(--ink); }
+    .logo i:nth-child(1) { height: 10px; }
+    .logo i:nth-child(2) { height: 20px; }
+    .logo i:nth-child(3) { height: 28px; background: var(--orange); }
+    .logo i:nth-child(4) { height: 16px; }
+    .name { margin-left: 12px; font-size: 11px; font-weight: 900; letter-spacing: .15em; }
+    .brandline { display: flex; align-items: center; }
+    .version { font-size: 9px; letter-spacing: .13em; }
+    .hero { display: grid; grid-template-columns: 1.25fr .75fr; }
+    .hero-copy { padding: 42px 38px 46px; border-right: 2px solid var(--ink); }
+    .eyebrow { color: var(--orange); font-size: 10px; font-weight: 900; letter-spacing: .16em; }
+    h1 { font-family: Georgia, serif; font-size: clamp(44px, 6vw, 74px); line-height: .93; font-weight: 500; letter-spacing: -.05em; margin: 12px 0 20px; }
+    .hero p { max-width: 700px; color: #60594d; font-size: 15px; line-height: 1.72; }
+    .signal { display: grid; place-items: center; padding: 30px; background: var(--blue); color: white; }
+    .signal-bars { width: 230px; height: 145px; display: flex; align-items: center; gap: 9px; }
+    .signal-bars i { flex: 1; display: block; background: white; }
+    .signal-bars i:nth-child(1) { height: 44px; }
+    .signal-bars i:nth-child(2) { height: 92px; background: var(--orange); }
+    .signal-bars i:nth-child(3) { height: 132px; }
+    .signal-bars i:nth-child(4) { height: 70px; background: #d8aa2f; }
+    .signal-bars i:nth-child(5) { height: 104px; }
+    .signal small { font-size: 9px; letter-spacing: .13em; }
+    .quick { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 2px solid var(--ink); }
+    .quick div { min-height: 92px; padding: 16px; border-right: 1px solid var(--ink); }
+    .quick div:last-child { border-right: 0; }
+    .quick span { display: block; color: #6f6758; font-size: 8px; letter-spacing: .12em; }
+    .quick b { display: block; margin-top: 8px; font-family: Georgia, serif; font-size: 17px; font-weight: 500; }
+    .content { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 28px; margin-top: 42px; }
+    aside { align-self: start; position: sticky; top: 16px; border: 2px solid var(--ink); background: var(--paper); }
+    aside strong { display: block; padding: 14px; border-bottom: 1px solid var(--ink); font-size: 9px; letter-spacing: .14em; }
+    aside a { display: block; padding: 9px 14px; border-bottom: 1px solid #d8cfbd; color: #5e574b; text-decoration: none; font-size: 11px; }
+    aside a:last-child { border-bottom: 0; }
+    aside a:hover { background: #fff9ea; color: var(--orange); }
+    article { min-width: 0; }
+    section { margin-bottom: 16px; border: 2px solid var(--ink); background: var(--paper); box-shadow: 5px 5px 0 rgba(24,23,19,.9); }
+    .section-head { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-bottom: 1px solid var(--ink); }
+    .section-head span { font-size: 9px; letter-spacing: .14em; font-weight: 900; color: var(--orange); }
+    h2 { margin: 0; font-family: Georgia, serif; font-size: 26px; font-weight: 500; }
+    .body { padding: 20px 22px 24px; }
+    h3 { margin: 22px 0 8px; font-size: 11px; letter-spacing: .11em; text-transform: uppercase; }
+    p, li { color: #494337; font-size: 14px; line-height: 1.72; }
+    p { margin: 9px 0; }
+    ul { padding-left: 20px; }
+    li + li { margin-top: 6px; }
+    .note { margin-top: 15px; padding: 13px 15px; border: 1px solid var(--ink); background: #fff8e7; font-size: 13px; line-height: 1.6; }
+    .orange { border-left: 8px solid var(--orange); }
+    .blue { border-left: 8px solid var(--blue); }
+    table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 12px; }
+    th, td { padding: 10px; border: 1px solid #cfc5b1; text-align: left; vertical-align: top; }
+    th { background: #eee4d0; font-size: 9px; letter-spacing: .09em; text-transform: uppercase; }
+    code { background: #e7ddc8; padding: 2px 5px; }
+    footer { margin-top: 30px; border-top: 2px solid var(--ink); padding: 18px 2px; color: #6d6556; font-size: 10px; line-height: 1.6; }
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-copy { border-right: 0; border-bottom: 2px solid var(--ink); }
+      .signal { display: none; }
+      .quick { grid-template-columns: repeat(2, 1fr); }
+      .content { grid-template-columns: 1fr; }
+      aside { position: static; }
+    }
+    @media (max-width: 520px) {
+      .frame { width: calc(100% - 16px); padding-top: 8px; }
+      .hero-copy { padding: 26px 20px; }
+      .quick { grid-template-columns: 1fr; }
+      .quick div { border-right: 0; border-bottom: 1px solid var(--ink); }
+      .body { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <header class="top">
+      <div class="topline">
+        <div class="brandline">
+          <span class="logo" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span class="name">PAGE ECHO</span>
+        </div>
+        <span class="version">PRIVACY / 1.0.0</span>
+      </div>
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">LOCAL DOCUMENT-TO-SOUND INSTRUMENT</div>
+          <h1>The page is measured here, not uploaded elsewhere.</h1>
+          <p>Page Echo converts visible document structure into a Web Audio sequence after you explicitly press “Scan this page.” This policy explains the content-script access required for that scan, the limited scan records stored in Chrome, audio behavior, deletion controls, and the absence of an external Page Echo service.</p>
+        </div>
+        <div class="signal">
+          <div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <small>STRUCTURE → LOCAL SOUND</small>
+        </div>
+      </div>
+      <div class="quick">
+        <div><span>SCAN TRIGGER</span><b>User presses Scan this page</b></div>
+        <div><span>RECENT STORAGE</span><b>Up to five scans</b></div>
+        <div><span>AUDIO</span><b>Generated with Web Audio</b></div>
+        <div><span>UPLOAD</span><b>None</b></div>
+      </div>
+    </header>
+
+    <div class="content">
+      <aside aria-label="Privacy policy sections">
+        <strong>DOCUMENT MAP</strong>
+        <a href="#scope">01 / Scope</a>
+        <a href="#purpose">02 / Purpose</a>
+        <a href="#access">03 / Website access</a>
+        <a href="#scan-data">04 / Scan data</a>
+        <a href="#not-read">05 / Data not collected</a>
+        <a href="#storage">06 / Storage & retention</a>
+        <a href="#audio">07 / Audio</a>
+        <a href="#network">08 / Network behavior</a>
+        <a href="#permissions">09 / Permissions</a>
+        <a href="#controls">10 / User controls</a>
+        <a href="#third-parties">11 / Third parties</a>
+        <a href="#security">12 / Security</a>
+        <a href="#children">13 / Children</a>
+        <a href="#changes">14 / Changes</a>
+        <a href="#contact">15 / Contact</a>
+      </aside>
+
+      <article>
+        <section id="scope" class="orange">
+          <div class="section-head"><h2>1. Scope and effective date</h2><span>POLICY SIGNAL 01</span></div>
+          <div class="body">
+            <p>This Privacy Policy applies to Page Echo version 1.0.0, a Chrome extension that converts a webpage’s visible document structure into a local interactive sound sequence. It describes the behavior of the production extension and its packaged popup, content script, studio, storage operations, and Web Audio engine.</p>
+            <p>The policy is effective September 4, 2026. “Page Echo,” “the extension,” “we,” and “our” refer to the extension and its developer. “You” refers to the person using the extension in a Chrome or Chromium-based browser profile.</p>
+            <p>Page Echo does not require an account. There is no Page Echo login, profile, cloud library, subscription database, social account, or synchronization service in version 1.0.0.</p>
+            <div class="note">The most important distinction in this policy is between access and transmission: Page Echo needs local access to visible page structure so it can make a scan, but it does not transmit that scan to a Page Echo server.</div>
+          </div>
+        </section>
+
+        <section id="purpose" class="blue">
+          <div class="section-head"><h2>2. Single purpose</h2><span>POLICY SIGNAL 02</span></div>
+          <div class="body">
+            <p>Page Echo’s single purpose is to convert user-requested measurements of a webpage’s visible document structure into a local, interactive Web Audio sequence.</p>
+            <p>The extension recognizes structural families such as headings, paragraphs, lists, links, images or visual elements, quotations, code blocks, and form or button controls. These families are mapped to different visual marks and sound behaviors in the Page Echo studio.</p>
+            <p>The studio lets you play the sequence, pause it, change tempo, change the synthesized voice, remix deterministic pitch variation, audition one mark, and mute or restore structural families. Those operations are performed within the extension UI.</p>
+            <p>Page Echo is not a text-to-speech service, web crawler, search engine, accessibility reader, content recommendation service, AI summarizer, microphone recorder, tab-audio recorder, or website editor.</p>
+          </div>
+        </section>
+
+        <section id="access">
+          <div class="section-head"><h2>3. Website access and content script behavior</h2><span>POLICY SIGNAL 03</span></div>
+          <div class="body">
+            <p>Page Echo registers a packaged content script on ordinary <code>http://</code> and <code>https://</code> webpages. Chrome uses that declaration to make the script available on matching pages. This is necessary because the extension must inspect the active page’s DOM when you ask it to scan that page.</p>
+            <p>The content script is designed to be dormant until it receives the specific <code>page-echo-scan</code> message from the Page Echo popup. Merely visiting a matching webpage does not cause the content script to create a scan, save a scan record, play audio, change the document, or send page information elsewhere.</p>
+            <p>When you press “Scan this page,” the popup asks the active tab’s Page Echo content script to inspect visible structural elements. The script checks elements selected from headings, paragraphs, list items, quotes, code and preformatted blocks, images and related visual containers, links, buttons, and common form controls.</p>
+            <p>The scan excludes elements considered invisible through common CSS and geometry checks. It also avoids double-counting a <code>code</code> element nested inside a <code>pre</code> block.</p>
+            <p>Page Echo does not modify the webpage during scanning. It does not inject advertisements, rewrite text, replace links, submit forms, click controls, change styles, or persist data inside the website’s own storage.</p>
+            <div class="note">The content script declaration is broad enough to support ordinary websites, but the actual scan is initiated by an explicit user action from the toolbar popup.</div>
+          </div>
+        </section>
+
+        <section id="scan-data">
+          <div class="section-head"><h2>4. What a scan contains</h2><span>POLICY SIGNAL 04</span></div>
+          <div class="body">
+            <p>A Page Echo scan is a local structured record. It is not a screenshot, audio recording, DOM dump, or full copy of the webpage. The record contains measurements used to construct the document tape and sound mapping.</p>
+            <table>
+              <thead>
+                <tr><th>Field</th><th>Purpose</th><th>Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Source title</td><td>Labels the scan in the studio.</td><td>Taken from the document title or hostname.</td></tr>
+                <tr><td>Source URL</td><td>Identifies which page was scanned.</td><td>Stored locally with the scan.</td></tr>
+                <tr><td>Scan time</td><td>Supports recency ordering and retention.</td><td>Used when pruning older scans.</td></tr>
+                <tr><td>Element type</td><td>Maps a DOM element to a sound family.</td><td>Examples: heading, paragraph, image, link, code.</td></tr>
+                <tr><td>Order and vertical position</td><td>Preserves broad document sequence.</td><td>Used for the tape layout.</td></tr>
+                <tr><td>Weight</td><td>Influences visual mark height and audio amplitude.</td><td>Calculated from size, text length, and element family.</td></tr>
+                <tr><td>Short label</td><td>Provides the local hover/audition tooltip.</td><td>Trimmed to 80 characters.</td></tr>
+                <tr><td>Type counts</td><td>Shows how many elements of each family were included.</td><td>Local summary only.</td></tr>
+              </tbody>
+            </table>
+            <p>Page Echo considers at most 260 qualifying visible structural elements before thinning. When a page produces more than the studio should render efficiently, the extension thins the sequence to at most 180 items while prioritizing structurally distinctive families such as headings, images, code, quotes, and controls.</p>
+            <p>The short label can contain a limited excerpt derived from visible text, alternative text, an accessibility label, or the structural type when no label is available. Because that label is saved locally as part of the recent scan, users should regard Page Echo scan records as potentially containing small snippets from the scanned page.</p>
+          </div>
+        </section>
+
+        <section id="not-read">
+          <div class="section-head"><h2>5. What Page Echo does not collect</h2><span>POLICY SIGNAL 05</span></div>
+          <div class="body">
+            <p>Page Echo does not create a full text archive of the webpage. It does not save complete article bodies, full source HTML, CSS files, JavaScript source, cookies, website localStorage, IndexedDB content, browsing history, browser bookmarks, downloads, saved passwords, autofill records, or developer-tools data.</p>
+            <p>The extension does not intentionally read password values, credit-card fields, authentication tokens, private keys, clipboard contents, camera input, microphone input, or tab audio. It does not request microphone, camera, downloads, history, bookmarks, geolocation, or clipboard permissions.</p>
+            <p>Page Echo does not capture a screenshot of the scanned webpage. The visual document tape shown by the studio is generated from structural measurements, not from pixels copied from the site.</p>
+            <p>Page Echo does not create a user account and does not ask for your name, email, postal address, phone number, payment details, date of birth, or other registration data.</p>
+            <p>The extension does not run analytics, telemetry, advertising, behavioral profiling, cross-site tracking, or an AI classification service.</p>
+          </div>
+        </section>
+
+        <section id="storage">
+          <div class="section-head"><h2>6. Local storage, retention, and deletion</h2><span>POLICY SIGNAL 06</span></div>
+          <div class="body">
+            <p>Page Echo stores recent scan records in <code>chrome.storage.local</code>. This browser-managed extension storage allows the newly opened studio tab to read the scan produced by the popup and allows a studio reload to continue displaying the same recent scan.</p>
+            <p>The popup prunes saved scan records so that Page Echo keeps at most five recent scans. Older Page Echo scan keys beyond that limit are removed automatically when a new scan is stored.</p>
+            <p>Page Echo also stores a small <code>pageEchoLastScan</code> value that identifies the most recent scan. The studio uses this identifier when opened without a specific scan ID.</p>
+            <p>The studio provides a visible “Clear Saved Scans” control. After confirmation, that control removes Page Echo scan records and the last-scan pointer from local extension storage, then returns the studio to its empty state.</p>
+            <p>Page Echo does not maintain a server backup of deleted scans. Because there is no Page Echo cloud account, the developer cannot remotely restore a scan that you delete from local storage.</p>
+            <p>Uninstalling the extension normally causes Chrome to remove its extension storage as part of browser extension management. If you want an explicit in-product deletion before uninstalling, use “Clear Saved Scans” first.</p>
+          </div>
+        </section>
+
+        <section id="audio">
+          <div class="section-head"><h2>7. Audio generation</h2><span>POLICY SIGNAL 07</span></div>
+          <div class="body">
+            <p>Page Echo generates sound locally through the browser’s Web Audio API. It creates oscillator tones for several structural families and short locally generated noise buffers for image and control accents.</p>
+            <p>The extension does not record from your microphone. It does not capture audio produced by the webpage. It does not send synthesized audio to a cloud audio engine or speech service.</p>
+            <p>Tempo, voice selection, remix state, muted structural families, play position, and individual audition actions are used by the current studio session to control sound. Version 1.0.0 does not transmit those interactions as analytics events.</p>
+            <p>The noise used for selected percussive accents is generated in memory through the Web Audio API. It is not downloaded from a sample library and is not saved as a recording of your device or environment.</p>
+          </div>
+        </section>
+
+        <section id="network">
+          <div class="section-head"><h2>8. Network and remote-code behavior</h2><span>POLICY SIGNAL 08</span></div>
+          <div class="body">
+            <p>Page Echo does not make application network requests. Its production code contains no Page Echo backend endpoint, analytics endpoint, AI endpoint, upload endpoint, advertising request, WebSocket connection, or remote synchronization request.</p>
+            <p>The extension does not use <code>fetch</code>, <code>XMLHttpRequest</code>, EventSource, WebSocket, or remote executable imports to send scan data away from the browser.</p>
+            <p>All JavaScript and CSS required for scanning and the studio is packaged with the extension. The privacy page likewise does not require remote scripts, fonts, or tracking resources.</p>
+            <p>The website you choose to scan was already loaded by your browser and can have its own network activity. Page Echo does not control or represent the privacy practices of that website.</p>
+            <p>The scan operation communicates between the Page Echo popup and the Page Echo content script using Chrome extension messaging inside the browser. That internal message is not an Internet upload.</p>
+          </div>
+        </section>
+
+        <section id="permissions">
+          <div class="section-head"><h2>9. Chrome permission and website-access justification</h2><span>POLICY SIGNAL 09</span></div>
+          <div class="body">
+            <h3><code>storage</code></h3>
+            <p>The declared <code>storage</code> permission is required to save recent local scans, the last-scan identifier, and to let the Page Echo studio retrieve a scan after the popup closes. It is also necessary for the built-in scan-deletion workflow.</p>
+            <h3>Content script access on HTTP and HTTPS pages</h3>
+            <p>The manifest declares a content script for <code>http://*/*</code> and <code>https://*/*</code> because Page Echo is designed to work on ordinary webpages across sites rather than on one fixed domain. This is website access, even though it is not listed as a named permission inside the manifest’s <code>permissions</code> array.</p>
+            <p>The script waits for the explicit scan message before building a record. Its purpose is limited to reading qualifying visible DOM structure and returning the local scan result to the extension popup.</p>
+            <p>The extension does not declare broad permissions such as <code>tabs</code>, <code>history</code>, <code>bookmarks</code>, <code>downloads</code>, <code>cookies</code>, <code>webRequest</code>, <code>clipboardRead</code>, <code>geolocation</code>, <code>audioCapture</code>, or <code>videoCapture</code>.</p>
+          </div>
+        </section>
+
+        <section id="controls">
+          <div class="section-head"><h2>10. User controls and choices</h2><span>POLICY SIGNAL 10</span></div>
+          <div class="body">
+            <p>You decide when a scan is created by pressing the Page Echo action and then choosing “Scan this page.” The extension does not automatically build a saved scan for every page you visit.</p>
+            <p>You can mute or restore a structural family in the studio. This affects the local sequence and audio generation; it does not change the underlying webpage.</p>
+            <p>You can change tempo and synthesized voice, remix the mapping variation, play or pause the sequence, and audition a single tape mark. These are local interactions and do not require a service account.</p>
+            <p>You can delete the saved Page Echo scan records with “Clear Saved Scans.” You can also disable or uninstall the extension through Chrome’s extension management interface.</p>
+            <p>If you do not want Page Echo to have content-script access to a particular browsing context, you can manage extension site access through browser controls where supported, disable the extension, or avoid initiating a scan on that page.</p>
+          </div>
+        </section>
+
+        <section id="third-parties">
+          <div class="section-head"><h2>11. Sharing, sale, analytics, and third parties</h2><span>POLICY SIGNAL 11</span></div>
+          <div class="body">
+            <p>Page Echo does not sell scan data, page labels, source URLs, document structure, or usage information. It does not rent or exchange that information for advertising value.</p>
+            <p>The extension does not include advertising and does not use scan data to build advertising segments or cross-site profiles.</p>
+            <p>Page Echo does not integrate a third-party analytics SDK or crash-reporting SDK. Version 1.0.0 does not send studio events to Google Analytics, Firebase Analytics, Segment, Mixpanel, Amplitude, Sentry, or a comparable provider.</p>
+            <p>Chrome provides the extension platform, content-script environment, Web Audio implementation, and local storage API. Your use of Chrome or Chromium is subject to the browser provider’s policies, which are separate from this Page Echo policy.</p>
+            <p>The webpages you scan are third-party sites unless you own them. Page Echo does not change the privacy terms of those sites and does not claim control over their independent data practices.</p>
+          </div>
+        </section>
+
+        <section id="security">
+          <div class="section-head"><h2>12. Security approach and limitations</h2><span>POLICY SIGNAL 12</span></div>
+          <div class="body">
+            <p>Page Echo minimizes remote exposure by not operating a cloud account or server for scans. Stored records stay in the browser profile rather than being transmitted to a Page Echo database.</p>
+            <p>The extension uses Manifest V3 and packaged JavaScript. Production files do not contain a manifest signing <code>key</code>, private key, remote loader, development harness, or remotely hosted executable code.</p>
+            <p>Chrome extension local storage is not an end-to-end encrypted vault created by Page Echo. A person or administrator with sufficient access to your operating-system account or browser profile may be able to inspect local browser data.</p>
+            <p>Because short scan labels can reflect visible page content, use the deletion control when you no longer want those local snippets retained. Avoid sharing browser profiles containing scans you consider sensitive.</p>
+            <p>Managed-browser administrators may apply extension or site-access policies outside Page Echo’s control. Those enterprise capabilities are part of the browser environment rather than a Page Echo data-sharing feature.</p>
+          </div>
+        </section>
+
+        <section id="children">
+          <div class="section-head"><h2>13. Children and sensitive content</h2><span>POLICY SIGNAL 13</span></div>
+          <div class="body">
+            <p>Page Echo is a general-purpose creative browser utility and is not specifically directed to children. It does not operate an age-gated account system and does not request a birth date.</p>
+            <p>The extension can be used on many kinds of webpages, including pages containing sensitive subjects. Page Echo does not attempt to infer sensitive traits from the scan and does not categorize the user based on the page.</p>
+            <p>If a shared or supervised browser profile is used, the person responsible for that profile should consider whether keeping recent local scans is appropriate and use the clear control when needed.</p>
+          </div>
+        </section>
+
+        <section id="changes">
+          <div class="section-head"><h2>14. Changes to Page Echo or this policy</h2><span>POLICY SIGNAL 14</span></div>
+          <div class="body">
+            <p>This document describes version 1.0.0. A future release might change structural families, storage limits, permissions, site-access scope, or other behavior. Material privacy changes should be reflected in an updated policy that describes the actual production code.</p>
+            <p>If a future version introduces an account, remote synchronization, analytics, AI processing, upload feature, or another network-dependent behavior, the relevant sections of this policy would need to change before that behavior could be accurately represented.</p>
+            <p>The effective date shown on this document identifies the current policy revision. Chrome may also inform users when an extension update requests materially broader browser permissions.</p>
+          </div>
+        </section>
+
+        <section id="contact">
+          <div class="section-head"><h2>15. Privacy questions and support</h2><span>POLICY SIGNAL 15</span></div>
+          <div class="body">
+            <p>For a privacy question, bug report involving data handling, or request for clarification about Page Echo, use the developer support or contact method displayed on the official Chrome Web Store listing from which you obtained the extension.</p>
+            <p>You do not need to send the developer a saved scan to ask a privacy question. If a bug concerns a particular page, you can describe the page structure or provide a non-sensitive reproduction page instead of sharing private content.</p>
+            <p>Because the developer does not maintain a Page Echo account database, the developer cannot remotely locate or erase scan records stored in your local Chrome profile. Use “Clear Saved Scans,” Chrome’s extension-data controls, or uninstall the extension on the device where the records exist.</p>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      <strong>Page Echo Privacy Policy · Version 1.0.0</strong><br>
+      Effective September 4, 2026 · Static local document · No remote scripts, tracking pixels, analytics, or third-party fonts.
+    </footer>
+  </div>
+</body>
+</html>
