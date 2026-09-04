@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Traceboard Privacy Policy</title>
+  <style>
+    :root {
+      --ink: #17211d;
+      --muted: #65726b;
+      --paper: #f3f0e8;
+      --card: #fbfaf6;
+      --line: #cbc7bd;
+      --green: #1f6b50;
+      --green-soft: #dde9e3;
+      --amber: #b96d28;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--paper); color: var(--ink); }
+    body { margin: 0; min-height: 100vh; background-image: radial-gradient(circle at 1px 1px, rgba(53,70,61,.12) 1px, transparent 0); background-size: 24px 24px; }
+    a { color: var(--green); }
+    .shell { width: min(1120px, calc(100% - 36px)); margin: 0 auto; padding: 34px 0 72px; }
+    .masthead { border: 1px solid var(--line); background: rgba(251,250,246,.96); border-radius: 24px; padding: 34px; box-shadow: 0 18px 55px rgba(31,42,36,.08); }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; }
+    .mark { width: 38px; height: 38px; border-radius: 50%; background: var(--ink); color: white; display: grid; place-items: center; font-family: Georgia, serif; }
+    .eyebrow { margin-top: 34px; color: var(--green); font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: 10px 0 14px; max-width: 760px; font-family: Georgia, serif; font-size: clamp(42px, 6vw, 72px); line-height: .96; letter-spacing: -.045em; font-weight: 500; }
+    .lede { max-width: 780px; margin: 0; color: var(--muted); font-size: 16px; line-height: 1.75; }
+    .facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 28px; }
+    .fact { padding: 14px; border-radius: 14px; background: var(--green-soft); }
+    .fact span { display: block; color: var(--muted); font-size: 9px; letter-spacing: .11em; text-transform: uppercase; }
+    .fact strong { display: block; margin-top: 5px; font-size: 13px; }
+    .layout { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 34px; margin-top: 34px; }
+    nav { position: sticky; top: 20px; align-self: start; padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: rgba(251,250,246,.92); }
+    nav strong { display: block; margin-bottom: 12px; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+    nav a { display: block; padding: 7px 0; color: var(--muted); text-decoration: none; font-size: 12px; }
+    nav a:hover { color: var(--green); }
+    article { min-width: 0; }
+    section { margin-bottom: 18px; padding: 26px; border: 1px solid var(--line); border-radius: 20px; background: rgba(251,250,246,.96); }
+    h2 { margin: 0 0 12px; font-family: Georgia, serif; font-size: 28px; font-weight: 500; letter-spacing: -.02em; }
+    h3 { margin: 22px 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
+    p, li { color: #3f4a44; font-size: 14px; line-height: 1.72; }
+    p { margin: 9px 0; }
+    ul { margin: 9px 0 0; padding-left: 20px; }
+    li + li { margin-top: 6px; }
+    .callout { margin-top: 15px; padding: 14px 16px; border-left: 4px solid var(--green); background: #edf3ef; border-radius: 0 12px 12px 0; }
+    .warning { border-left-color: var(--amber); background: #f5ecdf; }
+    code { padding: 2px 5px; border-radius: 5px; background: #ebe7de; color: #33433b; font-size: .92em; }
+    table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 12px; }
+    th, td { padding: 11px 10px; border-bottom: 1px solid #dedad1; text-align: left; vertical-align: top; }
+    th { color: var(--muted); font-size: 9px; letter-spacing: .09em; text-transform: uppercase; }
+    footer { margin-top: 24px; padding: 18px 4px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+    @media (max-width: 820px) {
+      .facts { grid-template-columns: repeat(2, 1fr); }
+      .layout { grid-template-columns: 1fr; }
+      nav { position: static; }
+    }
+    @media (max-width: 520px) {
+      .shell { width: min(100% - 20px, 1120px); padding-top: 10px; }
+      .masthead, section { padding: 20px; border-radius: 16px; }
+      .facts { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <div class="brand">
+        <span class="mark">T</span>
+        <span>Traceboard</span>
+      </div>
+      <div class="eyebrow">Privacy field guide · Version 1.0</div>
+      <h1>Your browsing trail stays in your browser.</h1>
+      <p class="lede">This policy explains what Traceboard observes, why it observes it, where the resulting trail is stored, and the controls available to you. Traceboard is designed as a local visual map of tab branches and navigations. It has no account system, advertising system, analytics service, cloud database, or Traceboard backend.</p>
+      <div class="facts">
+        <div class="fact"><span>Storage</span><strong>Local Chrome extension storage</strong></div>
+        <div class="fact"><span>Network</span><strong>No Traceboard network requests</strong></div>
+        <div class="fact"><span>Page content</span><strong>Not read</strong></div>
+        <div class="fact"><span>Delete</span><strong>Clear Local Trail</strong></div>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav aria-label="Privacy policy contents">
+        <strong>Contents</strong>
+        <a href="#scope">1. Scope</a>
+        <a href="#purpose">2. Product purpose</a>
+        <a href="#data">3. Data processed</a>
+        <a href="#not-collected">4. What is not collected</a>
+        <a href="#permissions">5. Permissions</a>
+        <a href="#storage">6. Storage and retention</a>
+        <a href="#network">7. Network behavior</a>
+        <a href="#controls">8. User controls</a>
+        <a href="#security">9. Security</a>
+        <a href="#sharing">10. Sharing and third parties</a>
+        <a href="#children">11. Children</a>
+        <a href="#changes">12. Policy changes</a>
+        <a href="#contact">13. Contact</a>
+      </nav>
+
+      <article>
+        <section id="scope">
+          <h2>1. Scope and effective date</h2>
+          <p>This Privacy Policy applies to Traceboard version 1.0.0 and to the local data processing performed by the Traceboard Chrome extension. It describes the production behavior of the extension as distributed through its official store listing.</p>
+          <p>The policy is effective September 4, 2026. References to “Traceboard,” “the extension,” “we,” or “our” in this document refer to the Traceboard extension and its developer. References to “you” refer to the person using the extension in a Chrome or Chromium-based browser profile.</p>
+          <p>Traceboard is an extension that draws relationships between pages visited in tabs. The extension runs inside your browser profile. It does not require you to register an account or provide a name, email address, password, profile photograph, payment method, or other account credential.</p>
+          <div class="callout">The central privacy design is simple: the trail is assembled and stored locally in Chrome extension storage, and Traceboard does not operate a server to receive it.</div>
+        </section>
+
+        <section id="purpose">
+          <h2>2. Single purpose of Traceboard</h2>
+          <p>Traceboard’s single purpose is to provide a local visual map of tab branches and page navigations so that you can understand and revisit the path of a browsing session. A page can appear as a node, and a navigation or tab opener relationship can appear as a connection between nodes.</p>
+          <p>The extension uses page addresses and titles because a visual trail would not be useful if every node were anonymous. It uses tab identifiers and opener relationships because those fields let it distinguish a continuation in one tab from a new branch opened from another tab.</p>
+          <p>Traceboard is not intended to inspect the body of a webpage, classify the subject of a page, profile your interests, create an advertising audience, rank sites, or infer sensitive attributes. Its data model is deliberately narrow and oriented around navigation structure.</p>
+          <p>The board lets you pan and zoom the graph, fit a large trail to the visible canvas, focus the path leading to one node, pin a useful node, add a short private note, reopen a recorded page, and clear the local trail.</p>
+        </section>
+
+        <section id="data">
+          <h2>3. Data Traceboard processes</h2>
+          <p>When you browse with Traceboard installed, the extension processes a limited set of browser tab metadata needed to build the trail. Depending on the event, this can include the following fields.</p>
+          <table>
+            <thead>
+              <tr><th>Data</th><th>Why it is used</th><th>Where it is kept</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Page URL</td><td>Identifies the page represented by a node and lets you reopen that page.</td><td><code>chrome.storage.local</code></td></tr>
+              <tr><td>Page title</td><td>Provides a readable label for the node.</td><td><code>chrome.storage.local</code></td></tr>
+              <tr><td>Tab identifier</td><td>Associates navigation events with the current tab while building the trail.</td><td>Local trail record and temporary session map</td></tr>
+              <tr><td>Opener relationship</td><td>Connects a newly opened tab to the node from which it was opened.</td><td><code>chrome.storage.session</code> while needed; relationship becomes the stored parent node ID</td></tr>
+              <tr><td>Creation, last-seen, and close timestamps</td><td>Orders the trail and distinguishes currently available and closed-tab nodes.</td><td><code>chrome.storage.local</code></td></tr>
+              <tr><td>Pin state</td><td>Remembers nodes you marked as useful.</td><td><code>chrome.storage.local</code></td></tr>
+              <tr><td>Private note</td><td>Stores the short note you voluntarily type into the node inspector.</td><td><code>chrome.storage.local</code></td></tr>
+            </tbody>
+          </table>
+          <p>Traceboard normalizes a recorded HTTP or HTTPS address by removing its URL fragment before saving a navigation node. Other parts of the URL, including query parameters, can remain because they may identify the page you actually visited. You should therefore treat the saved trail as browsing information and use the clear control when you no longer want it retained.</p>
+          <p>Traceboard currently caps its stored navigation-node collection at 500 nodes. It also limits retained session metadata to the most recent 50 session records. The visible board shows the latest session and caps its current rendering set to 180 nodes for predictable performance.</p>
+        </section>
+
+        <section id="not-collected">
+          <h2>4. Information Traceboard does not collect</h2>
+          <p>Traceboard does not inject a content script into ordinary websites and does not read webpage body text, article paragraphs, form field values, passwords, payment details, messages, comments, images, video frames, clipboard contents, microphone input, camera input, downloads, cookies, localStorage belonging to websites, or the contents of browser developer tools.</p>
+          <p>The extension does not create a user account and therefore does not ask for a legal name, username, email address, postal address, telephone number, date of birth, government identifier, profile biography, or payment information.</p>
+          <p>Traceboard does not use analytics or telemetry. It does not send feature-use events, crash reports, identifiers, browsing records, notes, or device characteristics to Google Analytics, Firebase Analytics, Segment, Mixpanel, Amplitude, Sentry, an advertising network, or another measurement provider.</p>
+          <p>Traceboard does not use remote artificial-intelligence services. It does not upload your URLs or notes to an LLM provider, embedding service, recommendation engine, categorization API, or remote search service.</p>
+        </section>
+
+        <section id="permissions">
+          <h2>5. Chrome permissions and why they are required</h2>
+          <h3><code>tabs</code></h3>
+          <p>The <code>tabs</code> permission lets Traceboard receive tab creation, navigation, title, and closure information and inspect the opener relationship supplied by Chrome. This is the core input needed to represent browsing paths.</p>
+          <p>The permission is not used to read the body of pages. Traceboard does not call <code>chrome.scripting</code>, register a page content script, or execute code inside the websites you visit.</p>
+          <h3><code>storage</code></h3>
+          <p>The <code>storage</code> permission allows the extension to save the trail, session timestamps, pin state, and your notes in <code>chrome.storage.local</code>. It also uses <code>chrome.storage.session</code> for a temporary map between live tab IDs and trail node IDs while the browser session is running.</p>
+          <p><code>chrome.storage.local</code> is browser-managed extension storage associated with your browser profile. Traceboard does not mirror that storage to a Traceboard cloud account or server.</p>
+          <div class="callout warning">Because URLs can themselves contain private or identifying information, a Traceboard trail should be treated as private browsing data on the device. Clear it before sharing a browser profile or computer when appropriate.</div>
+        </section>
+
+        <section id="storage">
+          <h2>6. Local storage, retention, and deletion</h2>
+          <p>Trail nodes and their session metadata are stored locally using Chrome’s extension storage API. The extension keeps this information so the map survives closing and reopening the Traceboard board and survives ordinary browser restarts.</p>
+          <p>Traceboard does not implement automatic cloud retention because it has no cloud storage. Data remains in the browser profile until one of the following occurs: you clear the trail using the built-in control, Chrome removes extension data when the extension is uninstalled or its storage is cleared, the internal node cap removes older nodes as new nodes are created, or you otherwise reset the browser profile.</p>
+          <p>The board includes a visible “Clear local trail” control. When you confirm that action, Traceboard clears its stored nodes, sessions, and last-activity state from <code>chrome.storage.local</code>. It also removes the temporary live-tab map from <code>chrome.storage.session</code>.</p>
+          <p>Short notes are attached to individual trail nodes. Deleting the trail deletes those notes with it. Traceboard does not keep a hidden second copy or server backup of deleted notes.</p>
+          <p>If you uninstall the extension, Chrome normally removes extension-controlled local storage for that extension. Browser behavior and enterprise profile management can vary, so you can use “Clear local trail” before uninstalling if you want to delete the data explicitly from within Traceboard first.</p>
+        </section>
+
+        <section id="network">
+          <h2>7. Network and remote-code behavior</h2>
+          <p>Traceboard contains no application network client. Its production source does not use <code>fetch</code>, <code>XMLHttpRequest</code>, WebSocket, EventSource, remote JavaScript imports, analytics beacons, tracking pixels, or a Traceboard API endpoint.</p>
+          <p>All executable JavaScript and CSS used by the extension is packaged with the extension. No executable code is downloaded at runtime. This design is consistent with Chrome Web Store requirements against remotely hosted executable code.</p>
+          <p>If you double-click a node or use its page link, Chrome can navigate to that recorded website. The resulting website request is a normal browser navigation requested by you, not a data upload to Traceboard. The destination website can of course apply its own privacy policy when you visit it.</p>
+          <p>The extension UI itself does not load remote fonts, remote images, remote style sheets, advertisements, social widgets, embedded media, or external analytics resources.</p>
+        </section>
+
+        <section id="controls">
+          <h2>8. Controls available to you</h2>
+          <p>You control whether Traceboard remains installed and can remove or disable it at any time through Chrome’s extension management interface. Disabling it stops it from receiving new browser tab events while disabled.</p>
+          <p>You can inspect the data visually on the Traceboard board. Nodes show the page title, site host, time information, pin status, closed-tab state, and relationships to other nodes.</p>
+          <p>You can add or remove a pin from a selected node. You can type, edit, or erase a private note. The note input is limited in length and is stored only as part of the local trail.</p>
+          <p>You can focus a path leading from a selected node back through its parents. This operation is a local view filter only; it does not send the path anywhere or create another copy of the data.</p>
+          <p>You can use “Clear local trail” to delete the current locally stored Traceboard trail. This is the primary in-product deletion control.</p>
+          <p>You can also use Chrome’s extension settings to clear extension data or uninstall Traceboard. Those controls are provided by the browser and operate independently from the Traceboard board.</p>
+        </section>
+
+        <section id="security">
+          <h2>9. Security approach and limitations</h2>
+          <p>Traceboard reduces exposure by avoiding a remote account system and remote database. There is no Traceboard password to steal and no Traceboard server containing your browsing trail.</p>
+          <p>The extension uses Manifest V3 and packages its executable code locally. It does not contain a production manifest <code>key</code>, signing secret, private certificate, remote loader, debug harness, or external script dependency.</p>
+          <p>Local-only storage is not the same as encryption. Traceboard does not add its own cryptographic layer on top of Chrome extension storage. Anyone who has sufficient access to your operating-system user profile or browser profile may be able to access local browser data.</p>
+          <p>You are responsible for the physical and account security of the device and browser profile where Traceboard is installed. Use operating-system login protection and Chrome profile controls appropriate to your environment.</p>
+          <p>If you use a managed browser, an administrator may be able to apply policies, inspect browser configuration, or manage extensions. Traceboard does not control those administrator capabilities.</p>
+        </section>
+
+        <section id="sharing">
+          <h2>10. Data sharing, sale, advertising, and third parties</h2>
+          <p>Traceboard does not sell personal data. It does not rent browsing information, exchange trail information for advertising value, or disclose notes to data brokers.</p>
+          <p>Traceboard does not display advertisements and does not integrate an ad SDK. Browsing trail data is not used to select ads, personalize marketing, build cross-site profiles, or measure advertising conversions.</p>
+          <p>The extension does not send trail data to third-party processors because its core behavior does not require a remote processor. Chrome itself provides the browser APIs and local extension-storage facilities used by the product; your use of Chrome is separately governed by the browser provider’s terms and policies.</p>
+          <p>When you choose to reopen a node, you leave the extension surface and navigate to the website represented by that URL. That website is an independent third party and may collect information according to its own practices.</p>
+          <p>If future versions introduce a network service, account feature, sync feature, analytics integration, or another material change in data handling, this policy will be revised before such behavior is represented as part of Traceboard’s privacy practices.</p>
+        </section>
+
+        <section id="children">
+          <h2>11. Children and sensitive use</h2>
+          <p>Traceboard is a general-purpose browser utility and is not designed or marketed specifically for children. It does not knowingly operate a registration flow or collect age information.</p>
+          <p>Because the trail can contain URLs from any site you visit, it may reflect sensitive browsing activity if you use the browser for sensitive subjects. Traceboard does not attempt to determine whether a URL concerns health, finance, religion, politics, sexuality, employment, or another sensitive topic.</p>
+          <p>Users who share a device, profile, classroom workstation, family computer, or other environment should consider whether retaining a local browsing trail is appropriate. The clear control can be used whenever the stored trail is no longer wanted.</p>
+        </section>
+
+        <section id="changes">
+          <h2>12. Changes to this policy</h2>
+          <p>This document is written for Traceboard version 1.0.0. Future releases may change features, permissions, or storage behavior. When a change materially affects the way data is processed, the privacy policy should be updated to describe the new production behavior.</p>
+          <p>A policy update does not silently grant new Chrome permissions. Chrome controls permission declarations through the extension manifest and may show additional permission information when an update requests broader access.</p>
+          <p>The “effective date” near the top of this policy indicates the date of this version. You can compare that date with the extension version shown in Chrome or on the store listing when reviewing privacy information after an update.</p>
+        </section>
+
+        <section id="contact">
+          <h2>13. Support and privacy contact</h2>
+          <p>For questions about this policy, a suspected privacy issue, or a request for clarification about Traceboard’s behavior, use the developer support or contact method displayed on the official Chrome Web Store listing from which you obtained the extension.</p>
+          <p>When contacting support about a privacy question, you do not need to send your browsing trail or private notes. Describe the behavior or question in general terms unless you intentionally choose to share a specific example.</p>
+          <p>Because Traceboard does not maintain user accounts or a server-side browsing database, the developer cannot remotely retrieve or delete a local trail on your behalf. Use the in-product “Clear local trail” control or Chrome’s extension-data controls on the device where the data is stored.</p>
+        </section>
+      </article>
+    </div>
+
+    <footer>
+      <strong>Traceboard Privacy Policy · Version 1.0.0</strong><br>
+      Effective September 4, 2026. This page contains no remote scripts, trackers, fonts, or analytics resources.
+    </footer>
+  </div>
+</body>
+</html>
